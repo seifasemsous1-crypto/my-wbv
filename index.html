@@ -1,0 +1,345 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Quiz</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 30px 15px;
+        }
+
+        .ss {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .question {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #222;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        button {
+            border: none;
+            background: #eee;
+            color: #222;
+            padding: 12px 20px;
+            margin: 5px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #222;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .correct:hover {
+            background: black;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px;
+            }
+
+            .question {
+                padding: 18px;
+            }
+
+            h2 {
+                font-size: 17px;
+            }
+
+            button {
+                width: 100%;
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="ss">
+
+    <!-- Question 1 -->
+    <div class="question">
+
+        <h2>
+            let numbers = [10, 20]; <br>
+            numbers.push(30); <br>
+            console.log(numbers);
+        </h2>
+
+        <button>[30, 10, 20]</button>
+        <button onclick="ss()" class="correct">[10, 20, 30]</button>
+        <button>40</button>
+
+    </div>
+
+
+    <!-- Question 2 -->
+    <div class="question">
+
+        <h2>What is a variable in programming?</h2>
+
+        <button onclick="ss()" class="correct">A container for storing data</button>
+        <button>A HTML tag</button>
+        <button>A CSS property</button>
+
+    </div>
+
+
+    <!-- Question 3 -->
+    <div class="question">
+
+        <h2>Which HTML tag is used to create a link?</h2>
+
+        <button> &lt;link&gt; </button>
+        <button onclick="ss()" class="correct"> &lt;a&gt; </button>
+        <button> &lt;href&gt; </button>
+
+    </div>
+
+
+    <!-- Question 4 -->
+    <div class="question">
+
+        <h2>Which CSS property changes the text color?</h2>
+
+        <button>background</button>
+        <button onclick="ss()" class="correct">color</button>
+        <button>font-color</button>
+
+    </div>
+
+
+    <!-- Question 5 -->
+    <div class="question">
+
+        <h2>Which JavaScript keyword creates a variable?</h2>
+
+        <button onclick="ss()" class="correct">let</button>
+        <button>style</button>
+        <button>html</button>
+
+    </div>
+
+
+    <!-- Question 6 -->
+    <div class="question">
+
+        <h2>Which HTML tag creates the biggest heading?</h2>
+
+        <button>&lt;h6&gt;</button>
+        <button onclick="ss()" class="correct">&lt;h1&gt;</button>
+        <button>&lt;head&gt;</button>
+
+    </div>
+
+
+    <!-- Question 7 -->
+    <div class="question">
+
+        <h2>What does CSS stand for?</h2>
+
+        <button>Computer Style System</button>
+        <button onclick="ss()" class="correct">Cascading Style Sheets</button>
+        <button>Creative Style System</button>
+
+    </div>
+
+
+    <!-- Question 8 -->
+    <div class="question">
+
+        <h2>Which method adds an item to the end of an array?</h2>
+
+        <button>pop()</button>
+        <button onclick="ss()" class="correct">push()</button>
+        <button>shift()</button>
+
+    </div>
+
+
+    <!-- Question 9 -->
+    <div class="question">
+
+        <h2>Which HTML attribute is used for an image source?</h2>
+
+        <button>href</button>
+        <button onclick="ss()" class="correct">src</button>
+        <button>link</button>
+
+    </div>
+
+
+    <!-- Question 10 -->
+    <div class="question">
+
+        <h2>Which CSS property makes an element a flex container?</h2>
+
+        <button>position: flex;</button>
+        <button onclick="ss()" class="correct">display: flex;</button>
+        <button>flex: display;</button>
+
+    </div>
+
+
+    <!-- Question 11 -->
+    <div class="question">
+
+        <h2>What does console.log() do in JavaScript?</h2>
+
+        <button>Creates an HTML element</button>
+        <button onclick="ss()" class="correct">Prints a value to the console</button>
+        <button>Changes the CSS</button>
+
+    </div>
+
+
+    <!-- Question 12 -->
+    <div class="question">
+
+        <h2>Which HTML element is used to create a button?</h2>
+
+        <button onclick="ss()" class="correct">&lt;button&gt;</button>
+        <button>&lt;btn&gt;</button>
+        <button>&lt;click&gt;</button>
+
+    </div>
+
+
+    <!-- Question 13 -->
+    <div class="question">
+
+        <h2>Which CSS property controls the space inside an element?</h2>
+
+        <button>margin</button>
+        <button onclick="ss()" class="correct">padding</button>
+        <button>spacing</button>
+
+    </div>
+
+
+    <!-- Question 14 -->
+    <div class="question">
+
+        <h2>What is the result of: 10 + "5" in JavaScript?</h2>
+
+        <button>15</button>
+        <button onclick="ss()" class="correct">"105"</button>
+        <button>10</button>
+
+    </div>
+
+
+    <!-- Question 15 -->
+    <div class="question">
+
+        <h2>Which HTML tag is used to create a paragraph?</h2>
+
+        <button>&lt;text&gt;</button>
+        <button onclick="ss()" class="correct">&lt;p&gt;</button>
+        <button>&lt;paragraph&gt;</button>
+
+    </div>
+
+
+    <!-- Question 16 -->
+    <div class="question">
+
+        <h2>Which CSS property changes the background color?</h2>
+
+        <button onclick="ss()" class="correct">background-color</button>
+        <button>color-background</button>
+        <button>bg-color</button>
+
+    </div>
+
+
+    <!-- Question 17 -->
+    <div class="question">
+
+        <h2>What does array.pop() do?</h2>
+
+        <button onclick="ss()" class="correct">Removes the last item</button>
+        <button>Adds an item</button>
+        <button>Removes the first item</button>
+
+    </div>
+
+
+    <!-- Question 18 -->
+    <div class="question">
+
+        <h2>Which JavaScript function converts JSON text into an object?</h2>
+
+        <button>JSON.stringify()</button>
+        <button onclick="ss()" class="correct">JSON.parse()</button>
+        <button>JSON.object()</button>
+
+    </div>
+
+
+    <!-- Question 19 -->
+    <div class="question">
+
+        <h2>Which CSS property controls the size of text?</h2>
+
+        <button onclick="ss()" class="correct">font-size</button>
+        <button>text-size</button>
+        <button>size</button>
+
+    </div>
+
+
+    <!-- Question 20 -->
+    <div class="question">
+
+        <h2>What does document.getElementById() do?</h2>
+
+        <button>Creates a new website</button>
+        <button onclick="ss()" class="correct">Finds an element by its ID</button>
+        <button>Deletes an element</button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+// function ss() {
+//     alert("Correct Answer! ✅");
+// }
+
+</script>
+<script src="js.js"></script>
+</body>
+</html>
+```
